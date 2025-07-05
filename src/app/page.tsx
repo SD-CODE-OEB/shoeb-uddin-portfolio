@@ -11,39 +11,50 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/Beams";
 import { Particles } from "@/components/ui/Particles";
 
 const Page = () => (
-  <div className="flex flex-col items-center justify-evenly h-full w-full">
+  <main className="flex flex-col items-center justify-evenly h-full w-full">
     <section
       id="home"
       className="min-h-screen w-full relative flex flex-col items-center justify-center overflow-hidden transition-transform  transform-3d perspective-midrange"
+      aria-label="Hero section - Shoeb Uddin Frontend Developer"
     >
       <BackgroundBeamsWithCollision>
         <HeroSection />
       </BackgroundBeamsWithCollision>
     </section>
+
     <section
       id="about"
       className="min-h-screen h-full w-full p-6 bg-gradient-to-b from-navy-dark/80 via-midnight to-surface grid place-items-center relative"
+      aria-label="About Shoeb Uddin - Frontend Developer specializing in React, Next.js, and TypeScript"
     >
-      <h2 className="text-2xl font-bold my-4 mb-8">About me</h2>
+      <header>
+        <h1 className="text-2xl font-bold my-4 mb-8">About me</h1>
+      </header>
       <Particles className="h-full absolute top-0 left-0 z-[-1] w-full" />
       <AboutSection />
     </section>
+
     <section
       id="projects"
       className="min-h-screen w-full bg-gradient-to-b from-navy-dark/80 via-midnight to-surface relative"
+      aria-label="Frontend development projects - SaaS applications, 3D games, and business directory apps"
     >
       <Particles className="h-full absolute top-0 left-0 z-[-1] w-full" />
       <ProjectSection />
     </section>
+
     <section
       id="workexperience"
-      className="min-h-screen w-full bg-gradient-to-b from-navy-dark/40 via-midnight to-surface/60 "
+      className="min-h-screen w-full bg-gradient-to-b from-navy-dark/40 via-midnight to-surface/60"
+      aria-label="Professional work experience in frontend development"
     >
       <WorkExpSection />
     </section>
+
     <section
       id="contact"
       className="min-h-screen p-4 sm:p-0 w-full flex justify-center items-center bg-gradient-to-b from-navy-dark/40 via-midnight to-surface/60 relative overflow-hidden border-t border-gold/20"
+      aria-label="Contact Shoeb Uddin - Frontend Developer for hire"
     >
       <Aurora
         colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
@@ -55,7 +66,7 @@ const Page = () => (
     </section>
 
     <Footer />
-  </div>
+  </main>
 );
 
 export default Page;

@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://shoebuddin.dev/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Disallow specific paths if needed
+Disallow: /api/
+Disallow: /_next/static/
+Disallow: /_next/image/
+
+# Allow important resources
+Allow: /public/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.webp
+Allow: /*.avif
+Allow: /*.svg
+Allow: /*.ico
+Allow: /*.gif
+Allow: /*.webp
+Allow: /*.avif
+Allow: /*.svg
