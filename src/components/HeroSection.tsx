@@ -47,8 +47,8 @@ const HeroSection = () => {
         </h1>
         <div className="mt-4 -mb-2">
           <FuzzyText
-            baseIntensity={0.2}
-            hoverIntensity={0.0001}
+            baseIntensity={0.001}
+            hoverIntensity={0.1}
             enableHover={true}
             color="#ffd077"
             fontSize={isMobile ? "1.8rem" : "3rem"}

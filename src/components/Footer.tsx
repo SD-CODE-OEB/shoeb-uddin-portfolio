@@ -31,8 +31,8 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-4 gap-6 z-50">
         <div className="col-span-2 flex flex-col items-start justify-center gap-4">
           <FuzzyText
-            baseIntensity={0.2}
-            hoverIntensity={0.001}
+            baseIntensity={0.002}
+            hoverIntensity={0.1}
             enableHover={true}
             color="#ffd077"
             fontSize={getFontSize}
