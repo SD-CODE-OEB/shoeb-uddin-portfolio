@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Personal Portfolio
 
-## Getting Started
+A modern, interactive portfolio website built with Next.js 15, TypeScript, and Tailwind CSS. Features immersive 3D visuals, smooth animations, and a responsive design showcasing my work as a Frontend Developer.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Modern Design**: Clean, professional UI with dark theme and gradient backgrounds
+- **Interactive 3D Elements**: Globe visualization and particle effects using Three.js
+- **Smooth Animations**: Framer Motion powered animations and transitions
+- **Responsive Layout**: Fully responsive across all device sizes
+- **Project Showcase**: Dynamic project cards with detailed descriptions
+- **Work Experience Timeline**: Interactive timeline showcasing professional journey
+- **Contact Integration**: Easy contact form and social media integration
+- **Performance Optimized**: Fast loading with Next.js 15 and Turbopack
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js 15, React 19, TypeScript
+- **Styling**: Tailwind CSS 4, Custom CSS
+- **Animations**: Framer Motion, Matter.js
+- **3D Graphics**: Three.js, Cobe, OGL
+- **Icons**: Lucide React
+- **Email**: EmailJS
+- **Development**: ESLint, Turbopack
+
+## 📁 Project Structure
+
+```text
+├── src/
+│   ├── app/                    # Next.js app directory
+│   │   ├── globals.css         # Global styles
+│   │   ├── layout.tsx          # Root layout
+│   │   └── page.tsx            # Main page
+│   ├── components/             # React components
+│   │   ├── ui/                 # UI components
+│   │   │   ├── Globe.tsx       # 3D Globe component
+│   │   │   ├── Particles.tsx   # Particle effects
+│   │   │   ├── Beams.tsx       # Background beams
+│   │   │   └── ...
+│   │   ├── AboutSection.tsx    # About section
+│   │   ├── HeroSection.tsx     # Hero section
+│   │   ├── ProjectSection.tsx  # Projects showcase
+│   │   ├── WorkExpSection.tsx  # Work experience
+│   │   └── ContactSection.tsx  # Contact form
+│   ├── lib/                    # Utility functions
+│   └── data.ts                 # Project and social data
+├── public/                     # Static assets
+│   ├── pr-logos/              # Technology logos
+│   ├── social/                # Social media icons
+│   └── tools/                 # Tool icons
+└── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the repository**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   git clone https://github.com/SD-CODE-OEB/portfolio.git
+   cd portfolio
+   ```
 
-## Learn More
+2. **Install dependencies**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Run the development server**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+4. **Open your browser**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📜 Available Scripts
+
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 🎯 Featured Projects
+
+- **Business Directory App** - TypeScript-based web application with business listings
+- **Stationery SaaS** - SaaS platform for stationery business management
+- **3D Game** - Browser-based 3D game with interactive graphics
+- **Django Blog App** - Full-featured blogging platform with CRUD operations
+
+## 🔗 Connect With Me
+
+- **GitHub**: [SD-CODE-OEB](https://github.com/SD-CODE-OEB)
+- **LinkedIn**: [Shoebuddin](https://www.linkedin.com/in/shoebuddin944)
+- **Twitter**: [@ushoeb944](https://x.com/ushoeb944)
+- **Email**: [ushoeb25@gmail.com](mailto:ushoeb25@gmail.com)
+
+## 🚀 Deployment
+
+The portfolio is optimized for deployment on Vercel:
+
+1. **Deploy to Vercel**
+
+   ```bash
+   npm run build
+   ```
+
+2. **Or use Vercel CLI**
+
+   ```bash
+   vercel --prod
+   ```
+
+Visit the [Vercel deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+⭐ If you found this portfolio helpful, please give it a star on GitHub!
