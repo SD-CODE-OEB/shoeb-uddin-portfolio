@@ -4,6 +4,7 @@ import "./globals.css";
 import cn from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import StructuredData from "@/components/StructuredData";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -54,7 +55,8 @@ export const metadata: Metadata = {
     telephone: false,
   },
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://shoebuddin.dev"
+    process.env.NEXT_PUBLIC_SITE_URL ||
+      "https://shoeb-uddin-portfolio.vercel.app/"
   ),
   alternates: {
     canonical: "/",
@@ -63,7 +65,9 @@ export const metadata: Metadata = {
     title: "Shoeb Uddin - Frontend Developer & Full-Stack Engineer",
     description:
       "Experienced Frontend Developer specializing in React, Next.js, TypeScript, and modern web technologies. View my portfolio featuring interactive 3D projects, SaaS applications, and responsive web solutions built with cutting-edge technologies.",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://shoebuddin.dev",
+    url:
+      process.env.NEXT_PUBLIC_SITE_URL ||
+      "https://shoeb-uddin-portfolio.vercel.app/",
     siteName: "Shoeb Uddin - Developer Portfolio",
     images: [
       {
@@ -119,6 +123,7 @@ export default function RootLayout({
         )}
       >
         <StructuredData />
+        <Analytics />
         {/* <SplashCursor /> */}
         <Navbar />
         {children}
