@@ -1,10 +1,11 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
-import "./globals.css";
 import cn from "@/lib/utils";
 import Navbar from "@/components/Navbar";
-import StructuredData from "@/components/StructuredData";
 import { Analytics } from "@vercel/analytics/next";
+import StructuredData from "@/components/StructuredData";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -127,6 +128,7 @@ export default function RootLayout({
         {/* <SplashCursor /> */}
         <Navbar />
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
