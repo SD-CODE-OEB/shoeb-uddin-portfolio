@@ -20,14 +20,7 @@ const HeroSection = () => {
     return windowWidth < 480;
   }, [windowWidth]);
   return (
-    <div
-      className="grid grid-cols-1 place-content-center h-full w-full relative transform-3d perspective-midrange"
-      style={{
-        backgroundImage: `radial-gradient(circle at 1px 1px, rgba(6,182,212,0.2) 1px, transparent 0)`,
-        backgroundSize: "10px 10px",
-        backgroundRepeat: "repeat",
-      }}
-    >
+    <div className="grid grid-cols-1 place-content-center h-full w-full relative transform-3d perspective-midrange">
       <div
         className="grid place-content-center gap-4 h-full w-full z-10"
         ref={containerRef}

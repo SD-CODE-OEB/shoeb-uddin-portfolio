@@ -7,7 +7,6 @@ import AboutSection from "@/components/AboutSection";
 import ProjectSection from "@/components/ProjectSection";
 import WorkExpSection from "@/components/WorkExpSection";
 import ContactSection from "@/components/ContactSection";
-import { BackgroundBeamsWithCollision } from "@/components/ui/Beams";
 import { Particles } from "@/components/ui/Particles";
 
 const Page = () => (
@@ -16,10 +15,15 @@ const Page = () => (
       id="home"
       className="min-h-screen w-full relative flex flex-col items-center justify-center overflow-hidden transition-transform  transform-3d perspective-midrange"
       aria-label="Hero section - Shoeb Uddin Frontend Developer"
+      style={{
+        backgroundImage: `radial-gradient(circle at 1px 1px, rgba(6,182,212,0.2) 1px, transparent 0)`,
+        backgroundSize: "10px 10px",
+        backgroundRepeat: "repeat",
+        backgroundColor: "var(--secondary)",
+        color: "var(--text-color)",
+      }}
     >
-      <BackgroundBeamsWithCollision>
-        <HeroSection />
-      </BackgroundBeamsWithCollision>
+      <HeroSection />
     </section>
 
     <section
